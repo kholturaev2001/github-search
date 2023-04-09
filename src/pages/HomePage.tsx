@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import { useSearchUsersQuery } from "../store/github/github.api";
 
 const HomePage = () => {
-  return (
-    <div>HomePage</div>
-  )
-}
+  const { isLoading, isError, data } = useSearchUsersQuery("muhammadrasul");
+  console.log("🚀 ~ file: HomePage.tsx:6 ~ HomePage ~ data:", data)
 
-export default HomePage
+  return <div>HomePage</div>;
+};
+
+export default HomePage;
