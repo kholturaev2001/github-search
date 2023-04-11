@@ -24,7 +24,6 @@ const HomePage = () => {
     useLazyGetUserReposQuery();
 
   useEffect(() => {
-    console.log(debouncedValue);
     setDropdown(debouncedValue.length > 3 && users?.length! > 0);
   }, [debouncedValue, users]);
 
