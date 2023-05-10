@@ -38,7 +38,7 @@ const HomePage = () => {
       {isError && (
         <p className="text-center text-red-600">Something went wrong</p>
       )}
-      <div className="relative w-[560px] flex flex-col gap-5">
+      <div className="relative w-[80%] max-w-[560px]  flex flex-col gap-5">
         <input
           type="text"
           className="border py-2 px-4 w-full h-[42px] mb-2"
