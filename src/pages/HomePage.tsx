@@ -42,7 +42,7 @@ const HomePage = () => {
         <input
           type="text"
           className="border py-2 px-4 w-full h-[42px] mb-2"
-          placeholder="Search Github username..."
+          placeholder="Search Github username (min 3 char)..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
