@@ -11,7 +11,7 @@ const FavouritesPage = () => {
     <div className="flex pt-10 mx-auto h-screen w-full ">
       <ul className="list-none w-full flex items-center flex-col">
         {favourites.map((el) => (
-          <li className="bg-blue-300 my-1 p-2 rounded-md w-[80%] overflow-hidden truncate" key={el}>
+          <li className="bg-blue-300 my-1 p-2 rounded-md w-[80%] max-w-[560px] overflow-hidden truncate" key={el}>
             <a href={el} target="_blank" rel="noreferrer" >{el}</a>
           </li>
         ))}
