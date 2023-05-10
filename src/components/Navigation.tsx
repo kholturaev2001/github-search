@@ -15,12 +15,12 @@ const Navigation = () => {
           Home
         </NavLink>
         <NavLink
-          to="/favourites"
+          to="/favorites"
           className={({ isActive }) =>
             `${isActive ? "text-[#93ceff] underline" : ""}`
           }
         >
-          Favourites
+          Favorites
         </NavLink>
       </span>
     </nav>

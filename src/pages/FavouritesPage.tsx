@@ -2,13 +2,14 @@ import React from "react";
 import { useAppSelector } from "../hooks/redux";
 import Delete from "../images/icons/Delete";
 import { useActions } from "../hooks/actions";
+import Empty from "../components/empty/Empty";
 
 const FavouritesPage = () => {
   const { favourites } = useAppSelector((state) => state.github);
   const { removeFavourite } = useActions();
 
   if (favourites.length === 0)
-    return <p className="text-center mt-10 ">No favourite items added...</p>;
+    return <Empty />
 
   return (
     <div className="flex pt-10 mx-auto h-screen w-full ">
